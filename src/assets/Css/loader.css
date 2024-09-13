@@ -1,0 +1,83 @@
+
+
+.wrapper > p {
+  margin: 0;
+  /* margin-top: 15px; */
+  margin-left:20px;
+  font-weight: bold;
+  font-size: 35px;
+  letter-spacing: 2px;
+}
+
+@media (max-width: 475px)  {
+  
+  .wrapper > p {
+     font-weight: normal;
+    font-size: 18px;
+  }
+  .wrapper{
+    display: flex;
+  }
+}
+.wrapper {
+  /* background-color: rgba(255, 255, 255, 0.5); */
+  background-image: linear-gradient(45deg, #6a00ff 2%, #a64aff 100%);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loader {
+  position: relative;
+  width:  48px;
+  height: 48px;
+  background: #6a00ff;
+  background: #EEB8FA;
+  transform: rotateX(65deg) rotate(45deg);
+   /* remove bellows command for perspective change */
+  /* //transform: perspective(200px) rotateX(65deg) rotate(45deg);  */
+  color: #fff;
+  animation: layers1 1s linear infinite alternate;
+}
+.loader:after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.7);
+  animation: layerTr 1s linear infinite alternate;
+}
+
+.pg-canvas{
+  position: absolute;
+}
+@keyframes layers1 {
+  0% { box-shadow: 0px 0px 0 0px  }
+ 90% , 100% { box-shadow: 20px 20px 0 -4px   }
+}
+@keyframes layerTr {
+  0% { transform:  translate(0, 0) scale(1) }
+  100% {  transform: translate(-25px, -25px) scale(1) }
+}
+
+.vertical-centered-box {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  &:after {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -0.25em;
+  
+  }
+}
+.vertical-centered-box{
+
+  /* background-color: red; */
+  z-index: -1;
+}

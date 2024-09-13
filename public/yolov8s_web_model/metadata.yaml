@@ -1,0 +1,26 @@
+description: Ultralytics best model trained on config.yaml
+author: Ultralytics
+date: '2024-04-20T15:14:53.404660'
+version: 8.2.2
+license: AGPL-3.0 License (https://ultralytics.com/license)
+docs: https://docs.ultralytics.com
+stride: 32
+task: detect
+batch: 1
+imgsz:
+- 1280
+- 1280
+names:
+  0: Auto_rickshaws
+  1: ambulance
+  2: bicycle
+  3: bus
+  4: car
+  5: construction_vehicle
+  6: mini_truck
+  7: motorbike
+  8: pickup_truck
+  9: tempo_loader
+  10: tempo_traveller
+  11: tractor_trolly
+  12: truck

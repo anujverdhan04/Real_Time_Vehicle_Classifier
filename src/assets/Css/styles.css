@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+    
+}
+body{
+    color: #fff;
+    background-color: #1a1a1a;
+    /* height: 1vh; */
+}
+
+.header{
+    padding:2em 4em;
+    display: flex;
+    background: rgb(26,26,26);
+    background: linear-gradient(180deg, rgba(26,26,26,0.98) 25%, rgba(26,26,26,0.85) 50%, rgba(26,26,26,0.5) 75%, rgba(26,26,26,0.20) 85%, rgba(26,26,26,0) 100%  );
+    height: 155px;
+    justify-content: space-between;
+    align-items: center;
+}
+.container{
+    margin: 1em 4em;
+    display: flex;
+    height: 100%;
+    
+}
+.mainContainer{
+    min-height: 100vh;
+}
+.text-content{
+    width: 50%;
+    z-index: 3;
+}
+.img-content{
+    width: 50%;
+}
+.intro{
+    font-size: 48px;
+    font-weight: bold;
+    margin: 0.4em 0;
+    margin-top: 0.1em ;
+}
+.intro-info{
+    font-size:20px ;
+    width: 70%;
+    margin-bottom: 2em;
+}
+.home_logo{
+    height: 112px;
+}
+.second-intro{
+    font-size: 40px;
+    margin: 0.3em 0;
+    margin-top: 0;
+}
+.btn{
+    background-color:#a64aff ;
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    padding: .5em .9em ;
+    border: none;
+    border-radius: 25px;
+}
+
+.trynowbtn{
+    
+    margin-top: 100px ;
+    transition: 300ms ease-in-out;
+}
+.trynowbtn:hover{
+    animation: flow 2s infinite;
+}
+@keyframes flow {
+    0% {background-color: #6a00ff;}
+    50% {background-color: #a64aff;}
+    75%   {background-color: #995cf5}
+    100% {background-color: #6a00ff;}
+    
+}
+
+.trynowbtn:hover{
+    -webkit-box-shadow: 0px 0px 60px 0px rgba(153,92,245,1);
+    -moz-box-shadow: 0px 0px 60px 0px rgba(153,92,245,1);
+    box-shadow: 0px 0px 60px 0px rgba(153,92,245,1);
+}
+.homeBackImage{
+    height: 100vh;
+    /* margin-left:-2em; */
+    position: absolute;
+    top:0;
+    right: 0;
+    z-index: -2;
+}
+.imageBlender{
+    height: 100vh;
+    width: 55vw;
+    position: absolute;
+    top:0;
+    right: 0;
+    background: rgb(26,26,26);
+    background: linear-gradient(90deg, rgba(26,26,26,1) 20%, rgba(255,255,255,0) 70%);
+    z-index: -1;
+}
+.about-btn{
+    text-decoration: none;
+    border: none;
+    color: #fff;
+    font-size:16px;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    padding: 0.3em 0.7em;
+    cursor: pointer;
+    z-index: 2;
+}
+.about-btn:hover {
+    background-color:#a64aff ; 
+    color: #fff;
+    border: 2px solid #a64aff;
+    
+}
+.about-btn:active {
+    background-color: #6a00ff; /* Sample active background color */
+}
+
+.about-txt{
+    font-size: 24px;
+    text-align: center;
+    
+}
+.about-image{
+    width: 100%;
+    position: relative;
+    border-radius: 25px;
+    padding: 18px;
+}
+
+
+
+
+
+
+@media(max-width: 475px)  {
+
+    .logoImage{
+        height: 40px;
+    }
+    .header{
+        height: 100px;
+        padding: 1em;
+    
+    }
+    .about-btn{
+        position: relative;
+        right: 25px;
+        border: none;
+        background-color: none;
+        top: 25px ;
+        display: none;
+    }
+    .container{
+        margin: 1em;
+    }
+
+
+    .homeBackImage{
+        /* position: absolute; */
+        /* top: 50%; */
+        /* left: 50%; */
+        transform: translate(-0%, 0%);
+    }
+    .text-content{
+        width: 100%;
+    }
+    .imageBlender{
+        width: 100%;
+        background: rgb(26,26,26);
+        background: linear-gradient(90deg, rgba(26,26,26,1) 25%, rgba(26,26,26,0.8) 50%, rgba(0,0,0,0.4) 70%);
+    }
+    .home_logo{
+        height: 86px;
+    }
+    .second-intro{
+        font-size: 26px;
+    }
+    .intro-info{
+        font-size: 16px;
+        width: 90%;
+        margin: 2em 0;
+    
+    }
+
+}
+
+@media (max-width:640px) and (min-width:475px) {
+    .container{
+        margin: 2em;
+        margin-top: 0;
+    }
+    .header{
+        padding: 2em;
+        padding-bottom: 0;
+        height: 112px;
+    }
+    .imageBlender{
+        width: 100vw;
+        background: rgb(26,26,26);
+        background: linear-gradient(90deg, rgba(26,26,26,1) 25%, rgba(26,26,26,0.85) 50%, rgba(26,26,26,0.5) 75%, rgba(26,26,26,0.20) 85%, rgba(26,26,26,0) 100%);
+    }
+    .home_logo{
+        height: 90px;
+    }
+    .text-content{
+        width: 100%;
+    }
+    .second-intro{
+        font-size: 30px;
+    }
+    .intro-info{
+        font-size: 16px;
+        width: 90%;
+        margin: 2em 0;
+    
+    }
+
+}
+@media (max-width:768px) and (min-width:640px) {
+    .imageBlender{
+        width: 100vw;
+        background: rgb(26,26,26);
+        background: linear-gradient(90deg, rgba(26,26,26,1) 25%, rgba(26,26,26,0.85) 50%, rgba(26,26,26,0.5) 75%, rgba(26,26,26,0.20) 85%, rgba(26,26,26,0) 100%);
+    }
+    .text-content{
+        width: 100%;
+    }
+    .img-content{
+        width: 0;
+    }
+    .header{
+        height: 112px;
+        padding-bottom: 0;
+    }.home_logo{
+        height: 90px;
+    }.second-intro{
+        font-size: 36px;
+    }.intro-info{
+        font-size: 18px;
+    }
+
+}
+
+
+@media (max-width:930px) and (min-width:768px) {
+    .imageBlender{
+        width: 84vw;
+        background: rgb(26,26,26);
+        background: linear-gradient(90deg, rgba(26,26,26,1) 25%, rgba(26,26,26,0.85) 50%, rgba(26,26,26,0.5) 75%, rgba(26,26,26,0.20) 85%, rgba(26,26,26,0) 100%);
+    }
+    .text-content{
+        width: 100%;
+    }
+    .img-content{
+        width: 0;
+    }
+    .header{
+        height: 112px;
+        padding-bottom: 0;
+    }.home_logo{
+        height: 90px;
+    }.second-intro{
+        font-size: 36px;
+    }.intro-info{
+        font-size: 18px;
+    }
+}
+
+
+
+@media (max-width: 1181px)and (min-width: 930px) {
+  
+    .imageBlender{
+
+        width: 70vw;
+        background: rgb(26,26,26);
+        background: linear-gradient(90deg, rgba(26,26,26,1) 25%, rgba(26,26,26,0.85) 50%, rgba(26,26,26,0.5) 75%, rgba(26,26,26,0.20) 85%, rgba(26,26,26,0) 100%);
+    }
+    .text-content{
+        width: 100%;
+    }
+    .img-content{
+        width: 0;
+    }
+    .header{
+        height: 112px;
+        padding-bottom: 0;
+    }.home_logo{
+        height: 90px;
+    }.second-intro{
+        font-size: 36px;
+    }.intro-info{
+        font-size: 18px;
+    }
+}
+
+
+/* @media  (max-width: 1181px) {
+    .imageBlender{
+        width: 55vw;
+        background: rgb(26,26,26);
+        background: linear-gradient(90deg, rgba(26,26,26,1) 10%, rgba(255,255,255,0) 70%);
+    }
+} */
